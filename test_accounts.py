@@ -147,6 +147,15 @@ class testAccounts(unittest.TestCase):
 
         self.assertEqual(found_credential.username, self.new_credential.username)
 
+    def test_display_all(self):
+        '''
+        Test for displaying all credentials saved
+        '''
+
+        self.assertEqual(Credentials.credentials, Credentials.display_all())
+
+        
+
 
 
 if __name__ == '__main__':
