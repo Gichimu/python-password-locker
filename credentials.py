@@ -42,3 +42,11 @@ class Credentials:
         for credential in cls.credentials:
             if(credential.password == password):
                 return credential
+
+    @classmethod
+    def display_all(cls):
+        '''
+        Displays all contacts saved
+        '''
+
+        return cls.credentials
