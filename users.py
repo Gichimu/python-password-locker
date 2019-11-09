@@ -28,23 +28,6 @@ class Users:
 
         Users.users.remove(self)
     
-
-    @classmethod
-    def user_exists(cls, username):
-        '''
-        Check if a user exists
-
-        Args:
-            username: username of the user account to check
-        '''
-
-        found_user = find_user(username)
-        if(found_user):
-            return True
-        else:
-            return False
-
-
     @classmethod
     def find_user(cls, username):
         '''
@@ -59,6 +42,22 @@ class Users:
         for user in cls.users:
             if(user.username == username):
                 return user
+
+    @classmethod
+    def user_exists(cls, username):
+        '''
+        Check if a user exists
+
+        Args:
+            username: username of the user account to check
+        '''
+
+        found_user = cls.find_user(username)
+        if(found_user):
+            return True
+        else:
+            return False
+
 
     @classmethod
     def show_all(cls):
