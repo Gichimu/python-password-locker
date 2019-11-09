@@ -142,7 +142,11 @@ class testAccounts(unittest.TestCase):
         Test if a credential can be searched for using the password
         '''
 
-        
+        self.new_credential.save_credential()
+        found_credential = Credentials.find_by_password("12345kamau1")
+
+        self.assertEqual(found_credential.username, self.new_credential.username)
+
 
 
 if __name__ == '__main__':
