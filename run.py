@@ -87,9 +87,7 @@ def main():
     
     print("Select L to login or R to register")
     response = input().lower()
-
-    
-        
+  
     while True:  
         if response == 'l':
             
