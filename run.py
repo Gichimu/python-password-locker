@@ -180,6 +180,10 @@ def main():
                         elif selection == 'ex':
                             print("Exiting now .........")
                             return
+
+                        else:
+                            print("Sorry, i didnt quite catch that, please try again")
+                            continue
                                 
 
                 else:
