@@ -79,12 +79,9 @@ def find_all_credentials():
 
     return Credentials.display_all()
 
-
 def main():
     print("Welcome to the Password Locker")
 
-
-    
     print("Select L to login or R to register")
     response = input().lower()
   
