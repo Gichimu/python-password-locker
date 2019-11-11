@@ -105,7 +105,7 @@ def main():
                     
                     while True:
                         print('*'*20)
-                        print("Select: CC to create a credential; FC to find a credential; SA to show all credentials; DC to delete a credential;")
+                        print("Select: CC to create a credential; FC to find a credential; SA to show all credentials; DC to delete a credential; EX to exit")
                         
                         selection = input().lower()
 
@@ -176,6 +176,10 @@ def main():
 
                             del_credential(inpt)
                             print("Your credential has been deleted")
+
+                        elif selection == 'ex':
+                            print("Exiting now .........")
+                            return
                                 
 
                 else:
