@@ -26,7 +26,8 @@ The application requires to be ran on a terminal. It is a prompt-based applicati
 * For instance, on selecting CC to create a credential, the user is asked whether he/she prefers to select
   their own password or have it selected for them. If they select N for no, a random password is selected for them.
 
-
+## Dependencies
+The application has 2 dependencies: Pyperclip and Random. 
  
 ## Languages
 The application is written in American english.
