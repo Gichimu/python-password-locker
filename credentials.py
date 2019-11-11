@@ -1,5 +1,5 @@
 
-
+import pyperclip
 class Credentials:
     '''
     Class that defines attributes and default behaviour for the credentials class
